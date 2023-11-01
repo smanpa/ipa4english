@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>English</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <body>
+        <header>
+            <a href="https://dapo.kemdikbud.go.id/sekolah/35417C66402652E388ED" class="logo">SMANPA</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+          <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Ezi Pebianri</h2>
+            <a href="#sec" id ="btn">Caption</a>
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>About this Website</h2>
+            <p>My name is Ezi Pebianri class XII IPA 4, I have a hobby of creating
+                beautiful works that I make myself. Currently I have an English
+                subject assignment to make a "Caption". I feel that just making a
+                simple caption is not difficult for me. I want to give my effort in
+                making this card, for ordinary people what I do is something that
+                makes things difficult for myself. However, I feel that if it can still be
+                done, why not? So I created this website just to fill my free time and
+                also practice in coding. There are quite a lot of inspirations and ideas
+                that I look for from various sources and ideas that arise from myself.
+                I spent a lot of time creating this website to build plans, look for
+                inspiration, take the first steps, and enter quite complicated code that
+                I had never learned before. Of course, what I do is very tiring, but this
+                is of my own volition because I believe there will be a positive impact
+                on myself.
+            </p>
+            <a href="caption.html" id="abc">Here</a>
+            <h3></h3>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('montains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('montains_front');
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            }) 
+            </script>
+    </body>
+</html>
